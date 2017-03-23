@@ -1,0 +1,55 @@
+about trigger:         //if HandlerTrigger then match the first "ele"
+$("ele").event1(function(){
+do something;})
+$("another_ele").event2(function(){
+$("ele").trigger("event1");
+})
+--------
+about delegate:               //child born at past or future;
+$("ele").delegate("child","event",function(){
+ do something;})
+ --------
+ about live:
+ $("ele").ive("event",function(){
+  do something;
+  })
+  ---------
+  about bind:
+  $("ele").bind.("event",function(){
+   do something;
+  })
+  ---------------------------------------------------------
+about selector:
+way one:
+
+$("el1".eq(id)        //focus on the No( id+1) el1
+way two:
+$("ele").fliter("selector")       //focus on the ele with selector
+way three:
+$("ele").not("selector")         //focus on the ele without selector
+ ---------------------------------------------------------
+about class(css):
+$("ele").addClass("className1 className2 ...")---
+$("ele").remove("className")
+---
+$("ele").toggleClass("className")
+  ---------------------------------------------------------
+ about css chanining :
+ eg:
+ $("ele").css("color","red").slideUp(2000).slideDown(2000);
+  ---------------------------------------------------------
+ about callback:
+ eg:
+ $("ele").hide(1000,function()
+{
+   dosomthing;})
+   
+   ---------------------------------------------------------
+   about get:
+   <h1>hello<h1>
+   <div><p>hei</p></div>
+   <input type.... value=hi />
+  
+   $("h1").text()        //hello
+   $("div").html()         //<p>hei</p>
+   $("input").val()    //hi55   
